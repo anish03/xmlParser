@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+    <DeviceID>3107607</DeviceID>
+    <Timestamp>2018-03-20T17:43:09</Timestamp>
+
+<TextMeasured>
+            <Name>TxPower_25C_dBm_Ch0</Name>
+            <Value>10.13</Value>
+</TextMeasured>
+
+<TextMeasured>
+            <Name>Ith_25C_mAmp_Ch0</Name>
+            <Value>19.96</Value>
+</TextMeasured>
+</data>

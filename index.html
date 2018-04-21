@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Plotly.js -->
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+
+<body>
+
+  <div id="myDiv"></div>
+  <script>
+    var trace1 = {
+  name : 'TxPower_25C_dBm_Ch0',
+  x: ['2018-03-20T17:43:09','2018-03-13T17:37:09','2018-03-06T15:45:03','2018-03-10T16:31:29'],
+  y: [10.13,10.17,10.63,10.38],
+  mode: 'lines+markers',
+  connectgaps: true
+};
+
+var trace2 = {
+  name : 'Ith_25C_mAmp_Ch0',
+  x: ['2018-03-20T17:43:09','2018-03-13T17:37:09','2018-03-06T15:45:03','2018-03-10T16:31:29'],
+  y: [19.96,20.02,20.46,20.22],
+  mode: 'lines+markers',
+  connectgaps: true
+};
+
+var data = [trace1, trace2];
+
+var layout = {
+  title: 'Performance metrics of Device',
+  showlegend: true,
+};
+
+Plotly.newPlot('myDiv', data, layout);
+  </script>
+</body>
+</html>
+
+
