@@ -8,7 +8,6 @@ Used plotly.js to visualize the data over a time series.
 
 ```
 pip install pandas
-
 ```
 
 ## How to use
