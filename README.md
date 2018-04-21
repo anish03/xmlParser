@@ -13,5 +13,6 @@ pip install pandas
 ## How to use
 
 ```
+git clone https://github.com/anish03/xmlParser.git
 python parser.py --deviceID
 ```
