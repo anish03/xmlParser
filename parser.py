@@ -44,6 +44,7 @@ def parse_all_xml_files(files):
 				else:
 					data.append(subitem.text)
 		xml_file_data.append(list(pd.Series(data)))
+		print xml_file_data
 	return headers,xml_file_data
 
 def generate_performance_metrics_csv(headers,xml_data):
@@ -84,7 +85,8 @@ def calculate_cumm_stress_time(id,df):
 
 def main():
 
-	id = sys.argv[1]
+	id = 3107607
+	#id = sys.argv[1]
 	headers,xml_data = parse_all_xml_files(files)
 	df = generate_performance_metrics_csv(headers,xml_data)
 	calculate_cumm_stress_time(id,df)
